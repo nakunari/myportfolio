@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,54 +7,227 @@
   <title>My Portfolio</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+  
 
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <script src="https://leaverou.github.io/prefixfree/prefixfree.min.js"></script>
+
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+ 
+
+
+
+  <header class="py-2 hl">
+    <nav class="container nav">
+
+      <div class="m_profile d-flex align-items-center fs-5"  >
+        <div>
+        <img src="/img/m_p.webp">
+        </div>
+        <p>박하은의 Portfolio</p>
       </div>
+      
+      <ul class="justify-content-end ms-auto d-flex align-items-center fs-5"  >
+        <li><a href="#">메인</a></li>
+        <li><a href="#">디자인</a></li>
+        <li><a href="#">퍼블리싱</a></li>
+        <li class="d-none">프로젝트</li>
+        <li class="mail"><a href=""><img src="/img/mcon.png"></a></li>
+        <li class="git"><a href=""><img src="/img/gcon.png"></a></li>
+      </ul>
+
     </nav>
   </header>
 
-  <main class="container">
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is my awesome portfolio where I showcase my projects.</p>
-    
-    <!-- Font Awesome icon example -->
-    <i class="fas fa-code"></i> <!-- Font Awesome 아이콘 -->
+<div class="m_profile2_sec  ">
+<div class="bg_item1"><img src="/img/bg_item1.png"></div>
+<div class="bg_item2"><img src="/img/bg_item2.png"></div>
+<div class="bg_item3"><img src="/img/bg_item3.png"></div>
 
-    <!-- AJAX Example -->
-    <button id="loadData" class="btn btn-primary">Load Data</button>
-    <div id="dataResult"></div>
+
+
+
+  <main class="container py-5"> 
+    <div class="row m_profile2 pt-5">
+    <div class="col-3 me-4 ms-4">
+      <div class="me"><img class="img-fluid" src="/img/me.png"></div>
+      <div class="mail2"> 
+        <img src="/img/mcon.png">
+        <a href="#" class="hl">
+          alkang260@gmail.com
+        </a>
+      </div>
+    </div>
+
+    <div class="col-8 ms-2 ibm">
+     
+
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-12 p-0">
+            <h3 class="mb-3 fontsize18">
+              <span class="icon">■</span> Technical Skills
+            </h3>
+            <hr class="skill-underline">
+          </div>
+        </div>
+      
+        <div class="row">
+          <!-- 각 기술 요소 -->
+          <div class="col-12 skills ms-2">
+            <span class="skill-item html">HTML</span>
+            <span class="skill-item css">CSS</span>
+            <span class="skill-item js">JS</span>
+            <span class="skill-item git2">Git</span>
+            <span class="skill-item chat">ChatGPT</span>
+            <span class="skill-item gnu">Gnuboard</span>
+            <span class="skill-item fire">Firebase</span>
+            <span class="skill-item file">FileZilla</span>
+            <span class="skill-item figma"><img src="/img/figmacon.png">Figma</span>
+            <span class="skill-item adox">Adobe XD</span>
+            <span class="skill-item adol">Adobe Illustrator</span>
+            <span class="skill-item adopp">Adobe Premiere Pro</span>
+            <span class="skill-item adops">Adobe Photoshop</span>
+
+          </div> 
+            
+        </div>
+      </div>
+      
+
+
+
+    </div>
+    </div>
+
+    <div class="py-4 intro-t ibmk  ">
+      <p class="bold500 fontsize18">안녕하세요 웹 디자이너, 퍼블리셔 박하은입니다.</p>
+      <p>원래부터 그림을 좋아하던 저는, 디자인에 대한 막연한 흥미로 웹디자인 업계에 취직하여 <br>웹 에이전시에서 1년간의 디자인 및 퍼블리싱 경험을 쌓으며 웹디자이너라는 직업과 마주하게 되었습니다. </p>
+      <p>웹 리뉴얼 작업을 통해 오래된 웹 사이트의 사용자 경험을 향상시키고, 시각적으로 매력적인 웹사이트를 디자인 하는것이 즐거웠고,<br> 그렇게 내가 만든 디자인이 누군가의 사이트가 된다는 것이 보람으로 느껴졌습니다. </p>
+      <p>아직은 완벽하다고 할 수 없는 디자인, 부족하고 조잡한 퍼블리싱이지만 제가 부족하다고 느끼는 만큼<br> 작업을 할 때는 언제나 작은 디테일에도 주의를 기울이며 맡은바에 최선을 다하려 노력하곤 합니다.</p>
+      <p>지금은 노력을 해야만 볼 수 있는 작은 디테일들과, 기술들이 언젠가 숨 쉬듯 자연스럽게 가능해질 그 날까지. <br><br>앞으로도 끊임없이 배우고 성장하며 다양한 도전과 기회를 통해 더 나은 디자이너, 그리고 모든 디자인을 구현 가능한 퍼블리셔로 발전하고자 합니다. </p>
+      <p>하단의 제 포트폴리오를 통해 디자인과 작업 스타일을 확인해보세요.</p> 
+
+    </div>
   </main>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<div>
+
+<main>
+
+</main>
+
+
+</div>
+
+
+<main class="container py-5"> 
+  <div class="title hl">
+    <h2><img class="img-fluid" src="/img/h2.png"><span class="fs-1">상세페이지ㆍ디자인</span></h2>
+  </div>
+
+
+
+
+
+
+  <div class="accordion  " id="accordionExample">
+    <div class="accordion-item ibmk">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <p>반려동물을 위한 올인원 앱 <span class="fw-bold">‘펫다’</span></p> 
+          <p class="ibmk acost">클릭하면 이미지가 나와요</p>
+          <i class="fas fa-sort-down ms-auto arrowcon"></i>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="col-12 p-0 contributions">
+            <h3 class="mb-3 ibm">
+              <span class="icon">■</span> My Contributions
+            </h3>
+            <hr class="skill-underline">
+            <h4>디자인 및 비테마 템플릿과 그누보드를 이용한 퍼블리싱 전반을 담당했습니다.
+            </h4>
+            <p>
+              A안과 B안으로 두가지 디자인을 하여 클라이언트에게 보여드렸었고, 최종 채택된 A안으로 퍼블리싱을 했습니다. 
+원페이지였고, 템플릿을 사용하는 작업이였기에 서버나 게시판 구축을 제외하곤 전적으로 제가 담당했습니다. 
+작업 소요기간은 1주 내외였습니다.
+            </p>
+            <div class="d-flex flex-wrap gap-2 ibm">
+              <button class="btn btn-primary" id="pc-version">PC.Ver</button>
+              <button class="btn btn-secondary" id="tablet-version">Tab Ver</button>
+              <button class="btn btn-info" id="mobile-version">Mobile.Ver</button>
+              <button class="btn btn-warning" id="all-devices">All Devices</button>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div> 
+
+ 
+    
+  </div>
+  
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- jQuery (for AJAX) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom JavaScript -->
   <script src="js/script.js"></script>
