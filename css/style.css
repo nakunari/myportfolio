@@ -24,6 +24,9 @@ a{
   color: initial;
 }
 
+p{
+  line-height: 1.618 !important;
+}
 
 .hl{
 font-family: 'hl';
@@ -43,6 +46,9 @@ font-family: 'hb';
 }
 .fontsize18{
 font-size: 19px !important;
+}
+.fontsizer18{
+  font-size: 18px !important;
 }
 
 
