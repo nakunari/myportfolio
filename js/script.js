@@ -70,3 +70,16 @@ $(document).ready(function () {
   });
   
 
+  document.querySelectorAll('.accordion-button').forEach(button => {
+    button.addEventListener('click', function (event) {
+        // 작은 지연 시간을 줘야 아코디언이 열린 후에 스크롤이 조정됨
+        setTimeout(() => {
+            const offset = 100; // 상단 여백 조정을 위한 값 (필요에 따라 조정)
+            const scrollPosition = button.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({
+                top: scrollPosition,
+                behavior: 'smooth' // 스크롤 애니메이션 적용
+            });
+        }, 300); // 300ms 지연
+    });
+});

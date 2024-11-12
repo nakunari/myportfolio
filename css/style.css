@@ -7,14 +7,14 @@
 
 @font-face {
   font-family: 'hl';
-  src: url('/font/hl.ttf') format('truetype');
+  src: url('../font/hl.ttf') format('truetype');
   font-weight: 300; /* Light */
   font-style: normal;
 }
 
 @font-face {
   font-family: 'hb';
-  src: url('/font/hb.ttf') format('truetype');
+  src: url('../font/hb.ttf') format('truetype');
   font-weight: 700; /* Bold */
   font-style: normal;
 }
@@ -65,7 +65,7 @@ font-size: 19px !important;
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url(/img/bg.png);
+    background-image: url(../img/bg.png);
   }
   
   h1 {
@@ -537,7 +537,7 @@ header {
 }
 
 .linkcon{
-  background-image: url(http://127.0.0.1:5500/img/linkcon.png);
+  background-image: url(../img/linkcon.png);
   background-size: cover;
   background-position: center;
   display: block;
