@@ -1,0 +1,732 @@
+/*폰트*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+@font-face {
+  font-family: 'hl';
+  src: url('../font/hl.ttf') format('truetype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'hb';
+  src: url('../font/hb.ttf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* 텍스트와 이미지의 선택 및 드래그 방지 */
+.no-drag {
+  user-select: none; /* 텍스트 선택 방지 */
+  -webkit-user-drag: none; /* 웹킷 브라우저에서 드래그 방지 */
+  -moz-user-select: none; /* 파이어폭스 */
+  -ms-user-select: none; /* IE/엣지 */
+  user-drag: none; /* 기타 브라우저 호환 */
+}
+
+
+
+a{
+  text-decoration: none;
+  color: initial;
+}
+
+p{
+  line-height: 1.618 !important;
+}
+
+.hl{
+font-family: 'hl';
+}
+.hb{
+font-family: 'hb';
+}
+.ibmk{
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+.ibm{
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.bold500{
+  font-weight: 500;
+}
+.fontsize18{
+font-size: 19px !important;
+}
+.fontsizer18{
+  font-size: 18px !important;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(../img/bg.png);
+  }
+  
+  h1 {
+    color: #343a40;
+  }
+  
+  #dataResult {
+    margin-top: 20px;
+  }
+   
+
+
+
+/*네비게이션 메뉴*/
+
+header{
+  background-color: #ffffff; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+
+.m_profile {
+  background-color: #F1F1F1;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+.m_profile div{
+width: 30px;
+height: 30px;
+margin-right: 10px;
+overflow: hidden;
+border-radius: 50px;
+}
+.m_profile div img{
+position: relative;
+left: -11px;
+top: -9px;
+width: 50px;
+height: 50px;
+}
+
+.mail a img,.git a img{
+height: 30px;
+width: 30px;
+}
+
+nav ul li{
+  margin-right: 15px;
+}
+
+
+/*내 프로필 배경*/
+
+.bg_item1 img,.bg_item2 img,.bg_item3 img{
+  z-index: -5;
+  position:absolute; 
+}
+.bg_item1 img{
+  top: 0;
+  right: 0;
+  width: 250px;
+  transform: scaleX(-1);
+}
+.bg_item2 img{
+  bottom: 0;
+  left: 0;
+  width: 250px;
+}
+.bg_item3 img{
+  bottom: 0;
+  right: 0;
+  width: 600px;
+  transform: scaleX(-1);
+}
+
+
+/*내 프로필*/
+
+.m_profile2 .onebox{
+background-color: #fff; 
+height: 280px;
+border-top-left-radius: 30px;
+border-bottom-right-radius: 30px;
+box-shadow: 0px   2px 10px rgba(0, 0, 0, 0.1);
+}
+.m_profile2 .twobox{
+  padding: 0;
+  background-color: #fff; 
+  height: 280px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0px   2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.intro-t p{ 
+  padding-top: 10px;
+  margin: 20px 0px 20px 0;
+  line-height: 1.618;
+  font-size: 17px;
+  
+}
+
+.m_profile2_sec{
+  background: linear-gradient(to top, rgb(255 255 255 / 80%), rgba(0, 0, 255, 0.0));
+  position: relative;
+} 
+
+
+/*내 프로필 안에 있는거.*/
+.m_profile2 .onebox .me{ 
+  max-height: 250px;
+  scale: 0.8;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.me img{
+  scale: 1.3;
+  position: relative;
+  top: 13px;
+}
+
+.mail2 {
+  position: relative;
+  top: -18px;
+      left: 28px;
+}
+
+.mail2 img{
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: 6px;
+}
+
+.mail2 a{
+  margin-left: 5px;
+  color: #2C2C33;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+
+/*스킬들*/
+.icon{
+  font-size: 15px; /* 아이콘 크기 */
+  background: linear-gradient(to right, #430099, #feb47b); /* 그라디언트 색상 */
+  -webkit-background-clip: text; /* 배경을 텍스트에만 클립 */
+  color: transparent; /* 텍스트를 투명하게 */
+  display: inline-block;
+  transform: rotate(45deg); /* 45도 회전 */
+  margin-left: 20px;
+}
+.skill-underline{ 
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, #430099, #feb47b);
+  margin: 20px 0;
+  width: 50%;
+}
+.skills span{ 
+  font-size: 14px;
+  padding:10px 18px; 
+  margin: 0 3px;
+  line-height: 50px; 
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+/*스킬 세부*/
+
+.html{
+  background-color: #e66027;
+  color: #fff;
+}
+
+.css{
+  background-color: #2862E9;
+  color: #fff;
+}
+
+.git2{
+  background-color: #000000;
+  color: #fff;
+}
+
+.js{
+  background-color: #ECBE02;
+  color: #000000;
+}
+.chat{
+  background-color: #70A597;
+  color: #fff;
+}
+.gnu{
+  background-color: #860CFF;
+  color: #fff;
+}
+.fire{
+  background-color: #F7C42A;
+  color: #3E3E3E;
+}
+.file{
+  background-color: #bf0000;
+  color: #fff;
+}
+.figma{
+  background-color: #2C2C33;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+} 
+
+.figma img{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: -2px;
+  top: 2px;
+} 
+
+
+.adox{
+  background-color: #450135;
+  color: #F75EEE;
+}
+.adol{
+  background-color: #310000;
+  color: #F79500;
+}
+.adopp{
+  background-color: #000058;
+  color: #9494F7;
+}
+.adops{
+  background-color: #001D34;
+  color: #2FA3F7;
+}
+
+
+/*상세페이지 및 디자인 섹션*/
+
+/*타이틀*/
+
+.title{
+  position: relative;
+
+  height: 380px;
+}
+
+.title h2 {
+  position: absolute;
+  top: -170px;
+}
+
+.title h2 img{
+  max-width: 70%;
+    transform: translateX(20%);
+    height: auto;
+}
+
+.title h2 span{
+  text-wrap: nowrap;
+  font-size: 32px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  position: absolute;
+}
+
+
+/*아코디언 공통*/
+.accordion-item:first-of-type,.accordion-item:last-of-type{
+  --bs-accordion-border-radius: 0px;
+  --bs-accordion-border-radius:0px;
+}
+
+.accordion-item{
+  box-shadow: 0px   2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  --bs-accordion-border-width:0px;
+}
+
+.accordion {
+  --bs-accordion-bg: #ffffff3a;
+  backdrop-filter: blur(20px); /* 배경 블러 처리 */
+}
+
+
+.accordion-button:not(.collapsed) {
+  --bs-accordion-active-bg: #fffff; /* 배경색을 밝은 회색으로 변경 */
+  background-color: var(--bs-accordion-active-bg);
+
+  box-shadow: none !important; /* box-shadow 초기화 */
+}
+
+.accordion-button{
+  border-bottom: 1px solid #00000017;
+  padding: ;
+}
+.accordion-button:focus{
+  border-color: #00000017;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image:#0000;
+}
+.accordion-button::after{
+
+}
+
+
+
+/*아코디언 css 관련*/
+
+
+.accordion-button:focus,
+.accordion-button:active  {
+  outline: none; /* 클릭 시 나타나는 선택 라인 제거 */
+  box-shadow: none; /* 선택 시 그림자가 생길 경우 없애려면 추가 */
+  color: inherit; /* 선택 시 텍스트 색 유지 */ 
+  background-color: transparent; 
+} 
+.accordion-button:focus::after,
+.accordion-button:active::after {
+    color: inherit; /* 화살표 색상을 기본 색상으로 유지 */
+    background-color: transparent; /* 화살표의 배경색을 투명하게 설정 */
+    box-shadow: none; /* 화살표에 적용될 수 있는 그림자 제거 */
+}
+.accordion-button:focus .icon,
+.accordion-button:active .icon {
+    color: inherit; /* 아이콘의 색상을 상속받도록 설정 */
+}
+
+button.accordion-button.collapsed::after {
+  color: inherit !important; /* 부모 요소의 텍스트 색상을 상속받아 유지 */
+  background-color: transparent; /* 배경색 투명하게 설정 */
+  box-shadow: none; /* 포커스나 클릭 시 생기는 그림자 제거 */
+}
+
+button.accordion-button.collapsed:focus::after,
+button.accordion-button.collapsed:active::after {
+  color: inherit !important; /* 포커스 및 클릭 시에도 색상이 유지되도록 설정 */
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  display: none; /* 기본 아이콘 숨기기 */
+}
+
+.my-custom-accordion::after {
+  content: '+';
+  font-size: 1.25rem; /* 아이콘 크기 조정 */
+  color: #007bff; /* 아이콘 색상 */
+  margin-left: auto; /* 아이콘을 오른쪽 끝으로 배치 */
+}
+
+.accordion-button:not(.collapsed) p {
+  color: #333; /* 아코디언이 열렸을 때도 동일한 색상 유지 */
+}
+
+/*아코디언 화살표*/
+
+.accordion-button .arrowcon {
+  scale: 1.2;
+  position: relative;
+  top: -3px;
+  left: -5px;
+  transition: transform 0.3s ease; /* 부드러운 회전을 위한 트랜지션 */
+  transform-origin: 5px 11px;
+}
+
+.accordion-button:not(.collapsed) .arrowcon {
+  transform: rotate(180deg); /* 아코디언이 열렸을 때 아이콘 회전 */ 
+}
+.acost{
+position: absolute;
+font-size: 13px;
+color: #00000050 !important;
+right: 45px;
+}
+
+
+/*nav 스틱키*/
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1020; /* 헤더가 다른 요소 위에 표시되도록 z-index 설정 */
+  background-color: white; /* 스크롤 시 배경색을 고정하려면 설정 */
+}
+
+
+
+/*포폴 내부 공통*/
+
+.contributions h3,.contributions hr{
+  margin-top: 10px;
+  position: relative;
+  border: none;
+  left: -20px;
+}
+
+
+.btn-primary,.btn-primary:hover,.btn-primary:active,.btn-primary:focus  {
+  background-color: #5e2cad !important; /* 보라색 */
+  color: #ffffff;
+  border: none; 
+}
+
+.btn-secondary,.btn-secondary:hover,.btn-secondary:active,.btn-secondary:focus  {
+  background-color: #8c4cad !important; /* 밝은 보라색 */
+  color: #ffffff;
+  border: none; 
+}
+
+.btn-third,.btn-third:hover,.btn-third:active,.btn-third:focus  {
+  background-color: #a25cad !important; /* 중간톤의 보라색 */
+  color: #ffffff;
+  border: none; 
+}
+
+.btn-fourth,.btn-fourth:hover,.btn-fourth:active,.btn-fourth:focus  {
+  background-color: #c67cad !important; /* 밝은 톤의 보라색 */
+  color: #ffffff;
+  border: none; 
+}
+
+
+.btn-five,.btn-five:hover,.btn-five:active,.btn-five:focus  {
+  background-color: #d19bbf !important; /* 밝은 톤의 보라색 */
+  color: #ffffff;
+  border: none; 
+}
+
+.btn-six,.btn-six:hover,.btn-six:active,.btn-six:focus  {
+  background-color: #d8b8cd !important; /* 밝은 톤의 보라색 */
+  color: #ffffff;
+  border: none; 
+}
+
+
+
+
+
+
+.btn {
+  margin-top: 20px;
+  padding: 0.5rem 1.5rem;
+  font-weight: nomal;
+}
+
+.separation{ 
+  color: #7d000070;
+}
+
+/*퍼블리싱*/
+
+.link-shortcut{ 
+  position: absolute;
+  font-size: 13px;
+  color: #000000 !important;
+  right: 50px;
+  top: 24px; 
+  z-index: 10;
+}
+
+.linkcon{
+  background-image: url(../img/linkcon.png);
+  background-size: cover;
+  background-position: center;
+  display: block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: -4px;
+  right: 80px;
+}
+
+.accordion-header{
+  position: relative;
+}
+
+
+
+
+/*미디어 쿼리*/
+
+
+/* 초대형 화면 (대형 디스플레이), 1400px 이상 */
+@media (max-width: 1400px) {
+
+  .me{
+    height: 300px;
+  }
+
+  .me img{
+    scale: 1.4; 
+    top: 30px; 
+  }
+
+  .title h2 { 
+    top: -130px;
+  }
+}
+
+/* 매우 큰 화면 (와이드 모니터), 1200px 이상 */
+@media (max-width: 1200px) { 
+
+  .me img {
+    scale: 1.6;
+    top: 40px;
+}
+
+.mail2 { 
+  left: 19px;
+}
+
+.title h2 {
+  top: -90px;
+}
+
+}
+
+/* 큰 화면 (데스크탑) 이상, 992px 이상 */
+@media (max-width: 992px) {
+  
+  .m_profile2 .onebox {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    height: 310px;
+  }
+
+  .me img {
+    scale: 2;
+    top: 60px;
+}
+
+.mail2 a {
+  margin-top: 10px;
+  display: inline-block;
+  width: 91px;
+}
+
+.mail2 img {
+  top: 0px;
+}
+
+
+.m_profile2 .twobox{
+  height: 310px;
+}
+
+.title { 
+  height: 250px;
+}
+.word-break1{
+  margin-right: 144px;
+}
+.word-break2{
+  margin-right: 150px;
+}
+
+}
+
+/* 중간 화면 (태블릿) 이상, 768px 이상 */
+@media (max-width: 768px) {
+  
+  .m_profile2 .onebox .me {
+  max-height: 298px;
+  width: 321px;
+  scale: 0.7;
+  }
+
+  .me img {
+    scale: 1.5;
+    top: 54px;
+  }
+
+  .m_profile2 .onebox{
+    position: relative;
+  }
+
+  .mail2{
+    position: absolute;
+  }
+
+
+  .mail2 a { 
+    width: auto;
+  }
+
+  .mail2 img {
+    top: 8px;
+}
+
+.onebox{
+  display: none;
+}
+
+
+.title h2 img {
+  max-width: 90%;
+  transform: translateX(6%);
+}
+
+.title h2 span {
+width: 280px;
+}
+
+.m_profile2 .twobox {
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px; 
+}
+
+}
+
+/* 작은 화면 (모바일) 이상, 576px 이상 */
+@media (max-width: 576px) {
+  
+  .m_profile2{
+    padding-top: 0px !important;
+  }
+
+  .m_profile{
+    display: none !important;
+  }
+
+  .title {
+    height: 175px;
+}
+
+ .col-md-8.col-12.ms-2.ibm.twobox{
+  width: 500px;
+  margin-left: 0 !important;
+ }
+
+ .col-12.skills.ms-2{
+  margin-left: 0 !important;
+ }
+}
+
+@media (max-width: 432px) {
+  .m_profile2 .twobox {
+    height: 358px;
+} 
+.title h2 span {
+  width: 240px;
+}
+}
+@media (max-width: 394px) {
+  .m_profile2 .twobox {
+    height: 406px;
+} 
+}
+
+@media (max-width: 354px) {
+  .m_profile2 .twobox {
+    height: 456px;
+}
+}
